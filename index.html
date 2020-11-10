@@ -18,13 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="Develop/style.css"/>
+    <link rel="stylesheet" href="Assets/style.css"/>
     <title>Work Day Scheduler</title>
-    <script src = "Develop/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-
+  
   <body>
     
     <header class="jumbotron">
@@ -33,14 +30,120 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>9AM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "9-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "9-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>10AM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "10-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "10-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>11AM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "11-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "11-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>12PM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "12-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "12-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>1PM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "13-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "13-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>2PM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "14-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "14-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>3PM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "15-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "15-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>4PM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "16-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "16-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3">          
+         <h4>5PM</h4>
+        </div>
+        <div class = "col-md-6">
+          <textarea id = "17-toDO"></textarea>
+        </div>
+        <div class = "col-md-3">
+          <button class = "btn btr-primary saveBtn" id = "17-save"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+
     </div>
-
-    <script> 
-    var currentDay = moment().format("dddd MMMM Do");
-    $("#currentDay").text(currentDay);
-
-    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src = "Assets/script.js"></script>
 
   </body>
 </html>
