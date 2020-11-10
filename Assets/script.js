@@ -9,6 +9,16 @@ $(".saveBtn").on("click", function() {
     localStorage.setItem(timeClock, userToDo)
 });
 
+var currentTime = moment().hour()
+console.log(currentTime)
+
 for ( let i = 9; i <= 17; i++) {
     $("#" + i + "-toDO").val(localStorage.getItem(i))
+    if (i < currentTime) {
+        $("#" + i + "-toDO").addClass("past")
+    } else if ( i > currentTime) {
+        $("#" + i + "-toDO").addClass("future")
+    } else {
+        $("#" + i + "-toDO").addClass("present")
+    }
 }
