@@ -4,9 +4,10 @@ var currentDay = moment().format("dddd MMMM Do");
 
 // Click funtion to save users task for the hour
 $(".saveBtn").on("click", function() {
-    var userToDo = $("#" + timeClock + "-toDO").val()
     var timeClock = $(this).attr("id").split("-")[0]
+    var userToDo = $("#" + timeClock + "-toDO").val()
     localStorage.setItem(timeClock, userToDo)
+    console.log(userToDo)
 });
 
 // Moment to get current hour
