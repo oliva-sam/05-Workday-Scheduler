@@ -16,7 +16,7 @@ Users are able to keep track of their tasks throughout a normal 9am-5pm workday.
 ![example-gif](./Assets/05-third-party-apis-homework-demo.gif)
 
 ##### Actual
-![actual-gif]
+![actual-gif](./Assets/workday-scheduler-demo.gif)
 
 ### URL of Depoloyed Application
 
